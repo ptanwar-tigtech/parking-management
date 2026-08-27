@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parking Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Parking Management System</h1>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+
+            <div>
+                <h2>Total Slots</h2>
+                <p id="total-slots">0</p>
+            </div>
+
+            <div>
+                <h2>Occupied Slots</h2>
+                <p id="occupied-slots">0</p>
+            </div>
+
+            <div>
+                <h2>Available Slots</h2>
+                <p id="available-slots">0</p>
+            </div>
+
+        </section>
+
+        <section class="form">
+            <h2>Park Vehicle</h2>
+
+            <input type="text" id="number" placeholder="Vehicle Number">
+
+            <select id="type">
+                <option value="bike">Bike</option>
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+            </select>
+
+            <button id="park">Park Vehicle</button>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="vehicles" id="vehicle-section">
+            <h2>Parked Vehicles</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehicle Number</th>
+                        <th>Type</th>
+                        <th>Slots</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="vehicles"></tbody>
+            </table>
+        </section>
+
+
+        <section class="parking-area">
+            <h2>Parking Slots</h2>
+
+            <div id="parking-slots"></div>
+        </section>
+
+
+    </main>
+
+    <script src="js/vehicle.js"></script>
+    <script src="js/parking.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

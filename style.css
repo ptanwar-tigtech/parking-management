@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.dashboard div {
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+#parking-slots {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+#parking-slots div {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.free {
+    background-color: lightgreen;
+}
+
+.full {
+    background-color: lightcoral;
+}
+
+.form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form input,
+.form select,
+.form button {
+    padding: 8px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+}
