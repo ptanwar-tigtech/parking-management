@@ -89,8 +89,7 @@ class parkingLot {
 
     removeVehicle(vehicleNumber) {
 
-        const vehicleSlots =
-            this.findVehicleSlots(vehicleNumber);
+        const vehicleSlots = this.findVehicleSlots(vehicleNumber);
 
         if (vehicleSlots.length === 0) {
             return false;
